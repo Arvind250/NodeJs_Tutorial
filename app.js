@@ -2,7 +2,7 @@ const http =require('http')
 const server = http.createServer((req,res)=>{
     console.log(req.url , req.method ,req.headers);
     if(req.url === '/'){
-    res.setHeader('Content-Type','text/html')
+    // res.setHeader('Content-Type','text/html')
     res.write('<html>')
     res.write('<body>')
     res.write(`<h1> Welcome to the page</h1>`)
